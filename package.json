@@ -1,0 +1,19 @@
+{
+  "name": "test-react-cargo-info",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoNameGeorge/test-react-cargo-info.git"
+  },
+  "author": "NNGeorge <utjhubqG@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoNameGeorge/test-react-cargo-info/issues"
+  },
+  "homepage": "https://github.com/NoNameGeorge/test-react-cargo-info#readme"
+}
