@@ -1,5 +1,5 @@
 type CargoType = 'Контейнер' | 'Генеральный груз'
-type CargoStatus =
+export type CargoStatus =
 	| 'Новый'
 	| 'Назначен ответственный менеджер'
 	| 'Расчет стоимости заказа'
@@ -9,16 +9,18 @@ type CargoStatus =
 
 export interface Cargo {
 	id: number
+	cargoNumber: number
 	type: CargoType
 	pinnedOrder: number
 	sender: string
 	actNumber: string | null
 	invoiceNumber: number | null
-	date: Date
+	date: string | null
 	status: CargoStatus
     manager: string
     deliveryToPort: string
     cargoType: string
+    weight: string
     volume: string
     length: string
     height: string
