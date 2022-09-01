@@ -1,12 +1,30 @@
-import React, { FC } from 'react';
-import { Routes } from 'react-router-dom';
+import { FC, useEffect } from 'react'
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom'
+
+import { CargoPage } from './pages'
 
 const App: FC = () => {
-    return (
-        <Routes>
-            
-		</Routes>
-    );
-};
+    const locate = useLocation()
+    const navigate = useNavigate()
 
-export default App;
+    useEffect(() => {
+        if (locate.pathname !== '/') {
+            navigate('/')
+        }
+    }, [])
+
+	return (
+		<Routes>
+			<Route
+				path='/'
+				element={<CargoPage />}
+			/>
+			<Route
+				path='*'
+				element={<CargoPage />}
+			/>
+		</Routes>
+	)
+}
+
+export default App

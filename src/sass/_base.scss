@@ -1,5 +1,5 @@
 * {
-	font-family: 'Inter', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	color: #121212;
@@ -17,7 +17,7 @@
 }
 
 body {
-	background: #f8fafd;
+	background: #F9F9F9;
 }
 
 .main-wrapper {
@@ -28,7 +28,7 @@ body {
 
 h1,
 .text-h1 {
-	font-family: 'NunitoSans', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: 32px;
 	line-height: 40px;
 	// @media (max-width: 1200px) {
@@ -49,7 +49,7 @@ h1,
 	}
 }
 h2 {
-	font-family: 'NunitoSans', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: 32px;
 	line-height: 40px;
 	@media (max-width: 1200px) {
@@ -70,7 +70,7 @@ h2 {
 	}
 }
 h3 {
-	font-family: 'NunitoSans', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: 28px;
 	line-height: 36px;
 	@media (max-width: 1200px) {
@@ -91,7 +91,7 @@ h3 {
 	}
 }
 h4 {
-	font-family: 'NunitoSans', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: 24px;
 	line-height: 32px;
 	@media (max-width: 1200px) {
@@ -112,7 +112,7 @@ h4 {
 	}
 }
 h5 {
-	font-family: 'NunitoSans', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: 20px;
 	line-height: 28px;
 	@media (max-width: 768px) {
@@ -125,7 +125,7 @@ h5 {
 	}
 }
 h6 {
-	font-family: 'NunitoSans', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	@media (max-width: 768px) {
@@ -229,7 +229,6 @@ body {
 }
 
 .btn {
-	@include no-btn();
 	border-radius: 30px;
 	font-weight: 500;
 	padding: 8px 20px;
@@ -261,7 +260,7 @@ body {
 		color: #ffffff;
 		box-shadow: 0 0 0 transparent;
 		&:hover {
-			box-shadow: $shadowSM;
+			// box-shadow: $shadowSM;
 			background: #039855;
 			border: 1px solid #039855;
 		}
@@ -288,7 +287,7 @@ body {
 			font-weight: 600;
 		}
 		&:hover {
-			box-shadow: $shadowSM;
+			// box-shadow: $shadowSM;
 		}
 		&:active {
 			box-shadow: 0 0 0 transparent;
