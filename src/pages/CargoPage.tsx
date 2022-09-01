@@ -1,5 +1,6 @@
 import { FC } from 'react'
 
+import { List } from '../components/cargo'
 import { Footer, Header } from '../components/common'
 import { SideMenu } from '../components/sideMenu'
 
@@ -10,11 +11,13 @@ const CargoPage: FC = () => {
 		<div className={classes.wrapper}>
 			<SideMenu />
 			<div className={classes.inner}>
-				<Header />
+				<div className={classes.listWrapper}>
+					<Header />
 
-
+					<List />
+				</div>
 				<Footer />
-            </div>
+			</div>
 		</div>
 	)
 }
