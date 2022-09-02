@@ -23,12 +23,14 @@ const List: FC = () => {
 		setCurrentCargos(cargos.slice(0, count))
 	}
 
-	console.log(currentCargos)
+	console.log(currentCargos) 
 
 	useEffect(() => {
 		const filteredCorgos = cargos.sort((a: any, b: any) => {
 			return a[sortType] - b[sortType]
 		})
+
+		setCurrentCargos(filteredCorgos.slice(0, activeCount))
 	}, [sortType])
 
 	const handlePrevPage = () => {

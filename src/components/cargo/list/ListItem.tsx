@@ -30,7 +30,7 @@ const ListItem: FC<ListItemProps> = ({ info }) => {
 			<div className={classes.inner}>
 				<div></div>
 				<span>{info.cargoNumber ? info.cargoNumber : '-'}</span>
-				<span>{info.cargoType ? info.cargoType : '-'}</span>
+				<span>{info.cargoType ? info.type : '-'}</span>
 				<span>{info.pinnedOrder ? info.pinnedOrder : '-'}</span>
 				<span>{info.sender ? info.sender : '-'}</span>
 				<span>{info.acceptanceActNumber ? info.acceptanceActNumber : '-'}</span>
