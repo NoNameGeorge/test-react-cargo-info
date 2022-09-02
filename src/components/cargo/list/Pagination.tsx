@@ -1,46 +1,28 @@
-import { FC, useEffect, useState } from 'react'
+import { FC } from 'react'
 
 import classes from './Pagination.module.scss'
 
-const count = [20, 50, 100]
-
 interface PaginationProps {
-	listLength: number
 	handleCount: Function
+	setActiveCount: Function
+	activeCount: number
+	count: number[]
+	handlePrevPage: Function
+	handleNextPage: Function
+	handleChangeCount: Function
+	pagesCount: number
 }
 
-const Pagination: FC<PaginationProps> = ({ listLength, handleCount }) => {
-	const [activeCount, setActiveCount] = useState(count[0])
-	const [activePage, setActivePage] = useState(1)
-	const [pagesCount, setPagesCount] = useState(0)
-
-	useEffect(() => {
-		let count = listLength / activeCount
-
-		if (Math.trunc(count) < count) {
-			count = Math.trunc(count) + 1
-		}
-
-		setPagesCount(count)
-	}, [activeCount])
-
-	const handleChangeCount = (count: number) => {
-		setActiveCount(count)
-		handleCount(count)
-	}
-
-	const handlePrevPage = () => {
-		if (activePage <= 1) return
-
-		setActivePage((prev) => prev - 1)
-	}
-
-	const handleNextPage = () => {
-		if (activePage >= pagesCount) return
-
-		setActivePage((prev) => prev + 1)
-	}
-
+const Pagination: FC<PaginationProps> = ({
+	handleCount,
+	activeCount,
+	setActiveCount,
+	count,
+	handlePrevPage,
+	handleNextPage,
+	pagesCount,
+	handleChangeCount,
+}) => {
 	return (
 		<div className={classes.wrapper}>
 			<div className={classes.showingCount}>

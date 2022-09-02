@@ -1,5 +1,67 @@
 import { Cargo, CargoStatus } from '../types/ICargo'
 
+export const sortImage = (
+	<svg
+		width='10'
+		height='10'
+		viewBox='0 0 10 10'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
+	>
+		{' '}
+		<g clipPath='url(#clip0_0_708)'>
+			{' '}
+			<path
+				d='M0 1.5V0.5H10V1.5H0ZM0 3.5V2.5H8V3.5H0ZM0 5.5V4.5H6V5.5H0ZM0 7.5V6.5H5V7.5H0ZM0 9.5V8.5H4V9.5H0Z'
+				fill='#CFCFCF'
+			/>{' '}
+		</g>{' '}
+		<defs>
+			{' '}
+			<clipPath id='clip0_0_708'>
+				{' '}
+				<rect
+					width='10'
+					height='9'
+					fill='white'
+					transform='translate(0 0.5)'
+				/>{' '}
+			</clipPath>{' '}
+		</defs>{' '}
+	</svg>
+)
+export const activeSortImage = (
+	<svg
+		width='14'
+		height='10'
+		viewBox='0 0 14 10'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
+	>
+		<g clipPath='url(#clip0_0_679)'>
+			<path
+				fillRule='evenodd'
+				clipRule='evenodd'
+				d='M11.3821 6.98L13.2711 4.968L14.0001 5.652L11.1541 8.686L10.7891 9.075L10.4241 8.685L7.57812 5.652L8.30812 4.968L10.3821 7.179V0H11.3821V6.98Z'
+				fill='#82868C'
+			/>
+			<path
+				d='M0 1V0H7V1H0ZM0 3V2H6V3H0ZM0 5V4H5V5H0ZM0 7V6H4V7H0ZM0 9V8H3V9H0Z'
+				fill='#82868C'
+			/>
+		</g>
+		<defs>
+			<clipPath id='clip0_0_679'>
+				<rect
+					width='14'
+					height='10'
+					fill='white'
+				/>
+			</clipPath>
+		</defs>
+	</svg>
+)
+
 export const status: CargoStatus[] = [
 	'Новый',
 	'Назначен ответственный менеджер',

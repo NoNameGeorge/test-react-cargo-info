@@ -6,11 +6,11 @@
 	.inner {
 		display: grid;
 		grid-template-columns:
-			12px minmax(100px, 130px) minmax(100px, 120px) minmax(100px, 150px) minmax(120px, 160px) minmax(
-				120px,
-				160px
-			)
-			minmax(150px, 250px) minmax(100px, 180px) 32px;
+		12px minmax(100px, 130px) minmax(100px, 120px) minmax(100px, 160px) minmax(120px, 160px) minmax(
+			120px,
+			170px
+		)
+		minmax(150px, 250px) minmax(100px, 180px) 32px;
 		justify-content: space-between;
 		padding: 18px 20px 18px 10px;
 		align-items: center;

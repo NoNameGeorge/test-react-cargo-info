@@ -10,7 +10,7 @@ interface ListItemProps {
 }
 
 const ListItem: FC<ListItemProps> = ({ info }) => {
-	const [isActive, setIsActive] = useState(true)
+	const [isActive, setIsActive] = useState(false)
 
 	const handleOpen = () => {
 		if (isActive) return
@@ -22,7 +22,6 @@ const ListItem: FC<ListItemProps> = ({ info }) => {
 		setIsActive(false)
 	}
 
-	console.log(info)
 	return (
 		<div
 			className={`${classes.wrapper} ${isActive ? classes.active : ''}`}
