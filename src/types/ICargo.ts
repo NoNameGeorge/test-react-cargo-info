@@ -17,17 +17,17 @@ export interface Cargo {
 	invoiceNumber: number | null
 	date: string | null
 	status: CargoStatus
-    manager: string
-    deliveryToPort: string
-    cargoType: string
-    weight: string
-    volume: string
-    length: string
-    height: string
-    width: string
-    description: string
-    tmts: string
-    freightUnit: string
-    location: string
-    acceptanceActNumber: string
+	manager: string
+	deliveryToPort: string
+	cargoType: string
+	weight: string
+	volume: string
+	length: string
+	height: string
+	width: string
+	description: string
+	tmts: string
+	freightUnit: string
+	location: string
+	acceptanceActNumber: string
 }

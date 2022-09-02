@@ -9,46 +9,46 @@ import image8 from '@/assets/images/menu/image8.svg'
 import image9 from '@/assets/images/menu/image9.svg'
 
 export const menu = [
-    [
-        {
-            image: image1,
-            name: 'Все заказы'
-        },
-        {
-            image: image2,
-            name: 'Все грузы'
-        },
-        {
-            image: image3,
-            name: 'Порты'
-        },
-        {
-            image: image4,
-            name: 'Пользователи'
-        },
-    ],
-    [
-        {
-            image: image5,
-            name: 'Все Организации'
-        },
-        {
-            image: image6,
-            name: 'Все документы'
-        },
-    ],
-    [
-        {
-            image: image7,
-            name: 'Вопрос-ответ'
-        },
-        {
-            image: image8,
-            name: 'Политика конфиденциальности'
-        },
-        {
-            image: image9,
-            name: 'История обновлений'
-        },
-    ],
-] 
+	[
+		{
+			image: image1,
+			name: 'Все заказы',
+		},
+		{
+			image: image2,
+			name: 'Все грузы',
+		},
+		{
+			image: image3,
+			name: 'Порты',
+		},
+		{
+			image: image4,
+			name: 'Пользователи',
+		},
+	],
+	[
+		{
+			image: image5,
+			name: 'Все Организации',
+		},
+		{
+			image: image6,
+			name: 'Все документы',
+		},
+	],
+	[
+		{
+			image: image7,
+			name: 'Вопрос-ответ',
+		},
+		{
+			image: image8,
+			name: 'Политика конфиденциальности',
+		},
+		{
+			image: image9,
+			name: 'История обновлений',
+		},
+	],
+]

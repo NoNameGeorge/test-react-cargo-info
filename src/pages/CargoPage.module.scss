@@ -1,12 +1,12 @@
 .wrapper {
-    display: grid;
-    min-height: 100vh;
-    grid-template-columns: minmax(200px, 270px) 1fr;
-    .inner {
-        padding: 20px 50px 20px 30px;
-        display: grid;
-        grid-template-rows: auto auto;
-        align-content: space-between;
-        grid-gap: 160px;
-    }
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: minmax(200px, 270px) 1fr;
+	.inner {
+		padding: 20px 50px 20px 30px;
+		display: grid;
+		grid-template-rows: auto auto;
+		align-content: space-between;
+		grid-gap: 160px;
+	}
 }

@@ -53,7 +53,13 @@ const SideMenu: FC = () => {
 										</Link>
 									)
 								})}
-								{subMenuIndex !== menu.length - 1 && <img alt="" src={borderImage} className={classes.borderImage} />}
+								{subMenuIndex !== menu.length - 1 && (
+									<img
+										alt=''
+										src={borderImage}
+										className={classes.borderImage}
+									/>
+								)}
 							</Fragment>
 						)
 					})}

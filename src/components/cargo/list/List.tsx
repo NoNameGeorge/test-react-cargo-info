@@ -1,9 +1,11 @@
-import React, { FC, useState } from 'react'
+import { FC, useState } from 'react'
 
 import { cargos } from '../../../config/cargo'
 
 import Pagination from './Pagination'
 import ListItem from './ListItem'
+import { Filter } from '../filter'
+import { Breadcrumb } from '../../common'
 
 import classes from './List.module.scss'
 
@@ -18,7 +20,12 @@ const List: FC = () => {
 	console.log(currentCargos)
 
 	return (
-		<div className={classes.wrapper}> 
+		<div className={classes.wrapper}>
+			<Breadcrumb
+				title='Все грузы'
+				prevPage='Вернуться на главную'
+			/>
+			<Filter />
 			<div className={classes.inner}>
 				{currentCargos &&
 					currentCargos.map((item) => {
@@ -30,7 +37,6 @@ const List: FC = () => {
 						)
 					})}
 			</div>
-
 			<Pagination
 				handleCount={handleCount}
 				listLength={cargos.length}

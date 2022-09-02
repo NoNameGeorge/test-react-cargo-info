@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react'
+import { FC, useState } from 'react'
 
 import { Cargo } from '../../../types/ICargo'
 
@@ -28,14 +28,14 @@ const ListItem: FC<ListItemProps> = ({ info }) => {
 			onClick={handleOpen}
 		>
 			<div className={classes.inner}>
-                <div></div>
-                <span>{info.cargoNumber ? info.cargoNumber : '-'}</span>
-                <span>{info.cargoType ? info.cargoType : '-'}</span>
-                <span>{info.pinnedOrder ? info.pinnedOrder : '-'}</span>
-                <span>{info.sender ? info.sender : '-'}</span>
-                <span>{info.acceptanceActNumber ? info.acceptanceActNumber : '-'}</span>
-                <span>{info.invoiceNumber ? info.invoiceNumber : '-'}</span>
-                <span>{info.date ? info.date : '-'}</span>
+				<div></div>
+				<span>{info.cargoNumber ? info.cargoNumber : '-'}</span>
+				<span>{info.cargoType ? info.cargoType : '-'}</span>
+				<span>{info.pinnedOrder ? info.pinnedOrder : '-'}</span>
+				<span>{info.sender ? info.sender : '-'}</span>
+				<span>{info.acceptanceActNumber ? info.acceptanceActNumber : '-'}</span>
+				<span>{info.invoiceNumber ? info.invoiceNumber : '-'}</span>
+				<span>{info.date ? info.date : '-'}</span>
 				<button
 					className={classes.open}
 					onClick={handleClose}

@@ -4,14 +4,14 @@ import { Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import { CargoPage } from './pages'
 
 const App: FC = () => {
-    const locate = useLocation()
-    const navigate = useNavigate()
+	const locate = useLocation()
+	const navigate = useNavigate()
 
-    useEffect(() => {
-        if (locate.pathname !== '/') {
-            navigate('/')
-        }
-    }, [])
+	useEffect(() => {
+		if (locate.pathname !== '/') {
+			navigate('/')
+		}
+	}, [])
 
 	return (
 		<Routes>

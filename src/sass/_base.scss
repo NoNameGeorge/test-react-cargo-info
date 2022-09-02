@@ -8,16 +8,16 @@
 ::-webkit-scrollbar {
 	width: 5px;
 	height: 5px;
-	background-color: rgba(0, 0, 0, 0.25);
+	background-color: rgba(0, 0, 0, 0);
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: #42d38b;
+	background: #57617b;
 	transition: ease 0.5s;
 }
 
 body {
-	background: #F9F9F9;
+	background: #f9f9f9;
 }
 
 .main-wrapper {

@@ -1,0 +1,25 @@
+.wrapper {
+	.back {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		margin-bottom: 15px;
+		svg {
+			height: 10px;
+			width: 6px;
+			margin-right: 10px;
+		}
+		> span {
+			font-size: 12px;
+			line-height: 16px;
+			color: #acacac;
+		}
+	}
+	.title {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 25px;
+		color: #3a3c40;
+		margin-bottom: 17px;
+	}
+}

@@ -1,28 +1,28 @@
 .wrapper {
-    .copy {
-        margin-bottom: 20px;
-        font-size: 13px;
-        line-height: 24px;
-        color: #2a2e37;
-    }
-    .linkWrapper {
-        display: flex;
-        align-items: center;
-        > a {
-            border-bottom: 1px solid transparent;
-            transition: ease 0.5s;
-            font-size: 14px;
-            line-height: 22px;
-            color: #606b87;
-            display: inline-block;
-            margin-right: 65px;
-            &:last-child {
-                margin-right: 0;
-            }
-            &:hover {
-                border-bottom: 1px solid #606b87;
-                transition: ease 0.5s;
-            }
-        }
-    }
+	.copy {
+		margin-bottom: 20px;
+		font-size: 13px;
+		line-height: 24px;
+		color: #2a2e37;
+	}
+	.linkWrapper {
+		display: flex;
+		align-items: center;
+		> a {
+			border-bottom: 1px solid transparent;
+			transition: ease 0.5s;
+			font-size: 14px;
+			line-height: 22px;
+			color: #606b87;
+			display: inline-block;
+			margin-right: 65px;
+			&:last-child {
+				margin-right: 0;
+			}
+			&:hover {
+				border-bottom: 1px solid #606b87;
+				transition: ease 0.5s;
+			}
+		}
+	}
 }

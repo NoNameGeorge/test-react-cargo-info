@@ -1,0 +1,79 @@
+.wrapper {
+	position: relative;
+	min-width: 240px;
+	.inner {
+		display: flex;
+		align-items: center;
+		background: #ffffff;
+		justify-content: space-between;
+		border: 1px solid #eeeeee;
+		border-radius: 8px;
+		padding: 10px 20px 10px 13px;
+		cursor: pointer;
+		> div {
+			margin-right: 20px;
+		}
+		> svg {
+			transition: ease 0.5s;
+		}
+		.title {
+			display: flex;
+			align-items: center;
+			margin-bottom: 6px;
+			> span {
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 16px;
+				color: #7c7c7c;
+			}
+			> svg {
+				width: 16px;
+				height: 16px;
+				margin-left: 10px;
+				transition: ease 0.5s;
+			}
+		}
+		.activeValue {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 21px;
+			color: #3a3c40;
+			transition: ease 0.5s;
+		}
+		&.active {
+			> svg {
+				transform: rotate(180deg);
+				transition: ease 0.5s;
+			}
+			.activeValue {
+				color: #acacac;
+				transition: ease 0.5s;
+			}
+		}
+	}
+	.hiddenInner {
+		background: #ffffff;
+		box-shadow: 0px 5px 18px rgba(40, 41, 61, 0.07);
+		border-radius: 8px;
+		height: 0;
+		position: absolute;
+		width: 100%;
+		overflow-y: scroll;
+		&.active {
+			height: 221px;
+		}
+		.listItem {
+			font-size: 12px;
+			line-height: 16px;
+			color: #2a2e37;
+			padding: 20px 10px;
+			background: transparent;
+			transition: ease 0.5s;
+			cursor: pointer;
+			&:hover {
+				background: #e3e6eb;
+				transition: ease 0.5s;
+			}
+		}
+	}
+}

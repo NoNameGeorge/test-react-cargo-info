@@ -4,12 +4,15 @@
 	cursor: pointer;
 	border-bottom: 1px solid #e9e9e9;
 	.inner {
-        display: grid;
-        grid-template-columns: 12px minmax(100px, 130px) minmax(100px, 120px) minmax(100px, 150px) minmax(120px, 160px) minmax(120px, 160px) minmax(150px, 250px) minmax(100px, 180px) 32px;
-        justify-content: space-between;
-        padding: 18px 20px 18px 10px;
-        align-items: center;
-        grid-gap: 10px;
+		display: grid;
+		grid-template-columns: 12px minmax(100px, 130px) minmax(100px, 120px) minmax(100px, 150px) minmax(120px, 160px) minmax(
+				120px,
+				160px
+			) minmax(150px, 250px) minmax(100px, 180px) 32px;
+		justify-content: space-between;
+		padding: 18px 20px 18px 10px;
+		align-items: center;
+		grid-gap: 10px;
 		> span {
 			font-size: 13px;
 			line-height: 18px;

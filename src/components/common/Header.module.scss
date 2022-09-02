@@ -1,75 +1,75 @@
 .wrapper {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    margin-bottom: 38px;
-    .inputWrapper {
-        position: relative;
-        width: 100%;
-        margin-right: 20px;
-        > svg {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 20px;
-        }
-        > input {
-            background: #f3f3f5;
-            border-radius: 8px;
-            max-width: 510px;
-            width: 100%;
-            border: 0;
-            padding: 16px 10px 16px 55px;
-            font-size: 13px;
-            line-height: 18px;
-            color: #82868c;
-            &::placeholder {
-                font-size: 13px;
-                line-height: 18px;
-                color: #82868c;
-            }
-        }
-    }
-    .buttonWrapper {
-        display: flex;
-        align-items: center;
-        > * {
-            margin-right: 26px;
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-        > span {
-            font-size: 14px;
-            line-height: 21px;
-            color: #5a5a5a;
-            display: inline-block;
-        }
-        .circleButton {
-            width: 52px;
-            height: 52px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #adb4c2;
-            border-radius: 50%;
-            border: 0;
-            cursor: pointer;
-            transition: ease 0.5s;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 22px;
-            color: #ffffff;
-            &:hover {
-                background: #858993;
-                transition: ease 0.5s;
-            }
-            > svg {
-                width: 24px;
-                height: 24px;
-            }
-        }
-    }
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	margin-bottom: 38px;
+	.inputWrapper {
+		position: relative;
+		width: 100%;
+		margin-right: 20px;
+		> svg {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 20px;
+		}
+		> input {
+			background: #f3f3f5;
+			border-radius: 8px;
+			max-width: 510px;
+			width: 100%;
+			border: 0;
+			padding: 16px 10px 16px 55px;
+			font-size: 13px;
+			line-height: 18px;
+			color: #82868c;
+			&::placeholder {
+				font-size: 13px;
+				line-height: 18px;
+				color: #82868c;
+			}
+		}
+	}
+	.buttonWrapper {
+		display: flex;
+		align-items: center;
+		> * {
+			margin-right: 26px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		> span {
+			font-size: 14px;
+			line-height: 21px;
+			color: #5a5a5a;
+			display: inline-block;
+		}
+		.circleButton {
+			width: 52px;
+			height: 52px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #adb4c2;
+			border-radius: 50%;
+			border: 0;
+			cursor: pointer;
+			transition: ease 0.5s;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 22px;
+			color: #ffffff;
+			&:hover {
+				background: #858993;
+				transition: ease 0.5s;
+			}
+			> svg {
+				width: 24px;
+				height: 24px;
+			}
+		}
+	}
 }
