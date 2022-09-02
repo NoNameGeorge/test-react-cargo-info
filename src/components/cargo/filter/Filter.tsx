@@ -7,6 +7,7 @@ import List from './List'
 import classes from './Filter.module.scss'
 
 const newStatusList = ['Любой', ...status]
+const newPortsList = ['Любой', ...ports]
 
 const Filter: FC = () => {
 	return (
@@ -15,7 +16,7 @@ const Filter: FC = () => {
 				<List
 					title='Порт назначения'
 					openText='Выберите порт'
-					list={ports}
+					list={newPortsList}
 				/>
 				<List
 					title='Статус'

@@ -9,7 +9,7 @@ interface ListItemProps {
 }
 
 const ListItem: FC<ListItemProps> = ({ info }) => {
-	const [isActive, setIsActive] = useState(false)
+	const [isActive, setIsActive] = useState(true)
 
 	const handleOpen = () => {
 		if (isActive) return
@@ -53,6 +53,16 @@ const ListItem: FC<ListItemProps> = ({ info }) => {
 						/>
 					</svg>
 				</button>
+			</div>
+			<div className={classes.hiddenInner}>
+				<div></div>
+				<div className={classes.user}>
+					<div className={classes.title}>Пользователь</div>
+					<div className={classes.image}>ИИ</div>
+					<div className={classes.name}>Иванов Иван</div>
+					<div className={classes.mail}>example@mail.ru</div>
+					<div className={classes.phone}>+7 (927) 777-55-55</div>
+				</div>
 			</div>
 		</div>
 	)
