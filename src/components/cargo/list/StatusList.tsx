@@ -22,10 +22,10 @@ const StatusList: FC<StatusListProps> = ({ id, active }) => {
 		})
 	}, [])
 
-    const handleClick = (listItem: IStatus) => {
-        setActiveStatus(listItem)
-        setIsActive(false)
-    } 
+	const handleClick = (listItem: IStatus) => {
+		setActiveStatus(listItem)
+		setIsActive(false)
+	}
 
 	return (
 		<div className={`${classes.wrapper} ${isActive ? classes.active : ''}`}>
@@ -59,7 +59,7 @@ const StatusList: FC<StatusListProps> = ({ id, active }) => {
 								<div
 									key={`${id}-cargo-status-${listItem.name}`}
 									className={isActiveListItem}
-                                    onClick={() => handleClick(listItem)}
+									onClick={() => handleClick(listItem)}
 								>
 									<div
 										className={classes.color}
