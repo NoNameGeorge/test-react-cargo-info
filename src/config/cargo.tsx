@@ -1,4 +1,4 @@
-import { Cargo, CargoStatus } from '../types/ICargo'
+import { ICargo, CargoStatus, IStatus } from '../types/ICargo'
 
 export const sortImage = (
 	<svg
@@ -71,6 +71,15 @@ export const status: CargoStatus[] = [
 	'Груз размещен на судне',
 ]
 
+export const statusWithColor: IStatus[] = [
+	{ name: 'Новый', color: '#2BF5D1' },
+	{ name: 'Назначен ответственный менеджер', color: '#F58C2B' },
+	{ name: 'Расчет стоимости заказа', color: '#F1F52B' },
+	{ name: 'Рассчитана стоимость заказа', color: '#F52B2B' },
+	{ name: 'Груз принят в порту отправления', color: '#2FF52B' },
+	{ name: 'Груз размещен на судне', color: '#532BF5' },
+]
+
 export const ports: string[] = [
 	'Архангельск',
 	'Певек',
@@ -90,7 +99,7 @@ export const ports: string[] = [
 	'Мыс Шмидта',
 ]
 
-export const cargos: Cargo[] = [
+export const cargos: ICargo[] = [
 	{
 		id: 0,
 		cargoNumber: 2887,

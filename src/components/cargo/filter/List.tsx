@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react'
+import { FC, useState } from 'react'
 
 import classes from './List.module.scss'
 

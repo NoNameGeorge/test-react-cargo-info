@@ -7,7 +7,12 @@ export type CargoStatus =
 	| 'Груз принят в порту отправления'
 	| 'Груз размещен на судне'
 
-export interface Cargo {
+export interface IStatus {
+	name: CargoStatus
+	color: string
+}
+
+export interface ICargo {
 	id: number
 	cargoNumber: number
 	type: CargoType
