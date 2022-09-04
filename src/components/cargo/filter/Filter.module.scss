@@ -8,6 +8,7 @@
 		> * {
 			margin-right: 10px;
 			margin-bottom: 10px;
+			height: 100%;
 			&:last-child {
 				margin-right: 0;
 			}
@@ -36,6 +37,39 @@
 				transition: ease 0.5s;
 				background: #2a2e37;
 				color: #ffffff;
+			}
+		}
+		.calendarWrapper {
+			position: relative;
+		}
+		.calendarButton {
+			display: flex;
+			align-items: center;
+			background: #ffffff;
+			justify-content: space-between;
+			border: 1px solid #eeeeee;
+			border-radius: 8px;
+			padding: 9px 20px 9px 13px;
+			cursor: pointer;
+			> svg {
+				margin-left: 20px;
+			}
+			.title {
+				display: flex;
+				align-items: center;
+				margin-bottom: 6px;
+				> span {
+					font-weight: 600;
+					font-size: 12px;
+					line-height: 16px;
+					color: #7c7c7c;
+				}
+				> svg {
+					width: 16px;
+					height: 16px;
+					margin-left: 10px;
+					transition: ease 0.5s;
+				}
 			}
 		}
 	}

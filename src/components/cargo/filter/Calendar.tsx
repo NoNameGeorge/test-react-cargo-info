@@ -6,28 +6,27 @@ import classes from './Calendar.module.scss'
 
 interface CalendarProps {
 	handleDate: Function
+	savedDate?: Date
 	handleForms: Function
-	handleClockChecker: Function
-	savedDate: Date
 }
 
 const monthNames = [
-	'January',
-	'February',
-	'March',
-	'April',
-	'May',
-	'June',
-	'July',
-	'August',
-	'September',
-	'October',
-	'November',
-	'December',
+	'Январь',
+	'Февраль',
+	'Март', 
+	'Апрель',
+	'май',
+	'Июнь',
+	'Ибль',
+	'Август',
+	'Сентябрь',
+	'Октябрь',
+	'Ноябрь',
+	'Декабрь',
 ]
-const weekDayNames = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
+const weekDayNames = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'SAT']
 
-const Calendar: FC<CalendarProps> = ({ handleDate, handleForms, handleClockChecker, savedDate }) => {
+const Calendar: FC<CalendarProps> = ({ handleDate, savedDate = new Date(), handleForms }) => {
 	const wrapper = useRef<HTMLDivElement>(null)
 
 	const [isActive, setIsActive] = useState<boolean>(false)
